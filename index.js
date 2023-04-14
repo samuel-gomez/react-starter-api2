@@ -23,6 +23,7 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   next();
 });
+app.set('view engine', 'pug');
 app.use(express.static('public'));
 
 router.get('/members', members);
@@ -31,6 +32,10 @@ router.get('/members/:id', membersDetail);
 router.get('/members/:id/download-detail', downloadDetails);
 router.get('/people', people);
 router.get('/convert/:base_currency', convert);
+
+router.get('/', (req, res) => {
+  res.render('pages/index', { title: 'Accueil' });
+});
 
 app.use(`/${API}`, router);
 
