@@ -24,6 +24,7 @@ app.use((req, res, next) => {
   next();
 });
 app.set('view engine', 'pug');
+app.set('views', './api');
 app.use(express.static('public'));
 
 router.get('/members', members);
