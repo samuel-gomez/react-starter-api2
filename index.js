@@ -1,7 +1,7 @@
 const express = require('express');
 
 const { PORT = '80' } = process.env;
-const ASSETS_PATH = '';
+const ASSETS_PATH = '/assets';
 
 const app = express();
 
