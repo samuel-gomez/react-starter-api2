@@ -7,7 +7,7 @@ const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', __dirname + '/views');
-app.use(express.static('assets'));
+app.use(ASSETS_PATH, express.static('assets'));
 
 app.use((req, res, next) => {
   res.locals.assetsPath = ASSETS_PATH;
