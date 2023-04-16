@@ -18,7 +18,7 @@
 
 Example route : http://localhost:9000/api/members
 
-## troubles
+## troubles and docs
 
 https://www.davidlangin.fr/articles/erreur-failed-to-lookup-view
 
