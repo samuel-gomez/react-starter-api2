@@ -1,0 +1,25 @@
+extends ../layouts/layout.pug
+
+block links
+  link(rel='stylesheet' href='/assets/css/contact.css')
+
+block content
+  .container
+    h1.contact-h1 Contactez-nous
+    form(action="GET")
+      .row
+        .input-field.col.s6
+          input#email(placeholder="Email")
+          label(for="email")
+        .input-field.col.s6
+          input#objet(placeholder="Objet")
+          label(for="objet")
+      .row
+        .input-field.col.s12
+          textarea.materialize-textarea#mail(name="mail", cols="30", rows="10", placeholder="Votre message")
+          label(for="mail")
+      .row 
+        .input-field.col.s12
+          button.btn.waves-effect.waves-light(type='submit' name='action')
+            | Envoyer le message 
+            i.material-icons.right send

@@ -1,0 +1,34 @@
+extends ../layouts/layout.pug
+
+block links
+  link(rel='stylesheet' href='/assets/css/inscription.css')
+
+block content
+  .container
+    h1.inscription-h1 Inscription
+    .inscription
+      form(action="GET")
+        .row1
+          .input-field.col.s12
+            input#nom(name="nom", placeholder="Nom*")
+            label(for="nom")
+        .row2
+          .input-field.col.s12
+          input#prenom(name="prenom", placeholder="Prénom*")
+          label(for="prenom")   
+        .row3
+          .input-field.col.s12
+            input#email(name="email", placeholder="Email*")
+            label(for="email")
+        .row4    
+          .input-field.col.s12
+            input#motdepasse(name="motdepasse", placeholder="Mot de passe*")
+            label(for="motdepasse")
+        .row5
+          p.compte-p Déjà un compte ?
+          a(href="/connexion") Connectez-vous.  
+        .row6
+          .input-field.col.s12
+            button.btn.waves-effect.waves-light(type='submit' name='action')
+              | S'inscrire  
+              
