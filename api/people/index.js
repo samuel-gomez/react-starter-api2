@@ -1,1 +1,0 @@
-export { default as people } from './list.js';
