@@ -8,12 +8,16 @@
 
 3. Create a .env file with :
 
-    1. API_URL=https://yourdatabase.restdb.io/rest
+   1. API_URL=https://yourdatabase.restdb.io/rest
 
-    2. API_KEY=your_api_key
+   2. API_KEY=your_api_key
 
 > Don't push the .env file and create theses on Netlify
 
 ## port 9000
 
 Example route : http://localhost:9000/api/members
+
+## troubles
+
+https://stackoverflow.com/questions/72133185/deploy-an-express-server-that-uses-express-static-to-serve-a-build-folder-to-ver

@@ -1,7 +1,7 @@
 extends ../layouts/layout.pug
 
 block links
-  link(rel='stylesheet' href='/assets/css/cart.css')
+  link(rel='stylesheet' href=`${assetsPath}/css/cart.css`)
 
 block content
   .container
@@ -9,7 +9,7 @@ block content
     .ecran-panier 
       .gauche-panier
         section.article-panier 
-          img.img-article-panier(src='/assets/img/placeholder.png', alt="Produit") 
+          img.img-article-panier(src=`${assetsPath}/img/placeholder.png`, alt="Produit") 
           .infos-produit-panier 
             .desc-produit-panier 
               h3.nom-produit-panier NOM PRODUIT
@@ -30,7 +30,7 @@ block content
               button.btn.waves-effect.waves-light(type='' name='action')
                 i.material-icons delete
         section.article-panier 
-          img.img-article-panier(src='/assets/img/placeholder.png', alt="Produit") 
+          img.img-article-panier(src=`${assetsPath}/img/placeholder.png`, alt="Produit") 
           .infos-produit-panier 
             .desc-produit-panier 
               h3.nom-produit-panier NOM PRODUIT
@@ -51,7 +51,7 @@ block content
               button.btn.waves-effect.waves-light(type='' name='action')
                 i.material-icons delete
         section.article-panier 
-          img.img-article-panier(src='/assets/img/placeholder.png', alt="Produit") 
+          img.img-article-panier(src=`${assetsPath}/img/placeholder.png`, alt="Produit") 
           .infos-produit-panier 
             .desc-produit-panier 
               h3.nom-produit-panier NOM PRODUIT
