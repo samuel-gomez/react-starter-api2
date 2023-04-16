@@ -21,6 +21,5 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ],
-  "rewrites": [{ "source": "/public/(.*)", "destination": "/assets" }]
+  ]
 }
