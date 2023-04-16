@@ -20,4 +20,10 @@ Example route : http://localhost:9000/api/members
 
 ## troubles
 
+https://www.davidlangin.fr/articles/erreur-failed-to-lookup-view
+
+https://flaviocopes.com/fix-dirname-not-defined-es-module-scope/
+
 https://stackoverflow.com/questions/72133185/deploy-an-express-server-that-uses-express-static-to-serve-a-build-folder-to-ver
+
+https://vercel.com/guides/using-express-with-vercel
