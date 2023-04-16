@@ -100,7 +100,7 @@ li a:hover {
 }
 
 .img-back {
-  background: url('/assets/img/placeholder.png') center;
+  background: url('/img/placeholder.png') center;
   background-repeat: no-repeat, repeat;
   background-size: cover;
   height: 25rem;

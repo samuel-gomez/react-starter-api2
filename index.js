@@ -1,13 +1,13 @@
 const express = require('express');
 
 const { PORT = '80' } = process.env;
-const ASSETS_PATH = '/assets';
+const ASSETS_PATH = '';
 
 const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', __dirname + '/views');
-app.use(ASSETS_PATH, express.static('public'));
+app.use(express.static('public'));
 
 app.use((req, res, next) => {
   res.locals.assetsPath = ASSETS_PATH;
